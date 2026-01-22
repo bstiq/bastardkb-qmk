@@ -24,12 +24,6 @@
             }
         }
     },
-    "encoder": {
-        "enabled" : true,
-        "rotary" : [
-            {"pin_a": "GP25", "pin_b": "GP24"}
-        ]
-    },
     "features": {
         "bootmagic": true,
         "command": false,
@@ -41,7 +35,13 @@
         "pointing_device": true,
         "caps_word": true,
         "tri_layer": true,
-        "digitizer": true
+        "digitizer": true,
+        "backlight": true,
+    },    
+    "backlight": {
+        "levels": 16,
+        "pin": "GP20",
+        "driver": "pwm"
     },
     "ws2812": {
         "pin": "GP10",
@@ -50,7 +50,7 @@
     "rgb_matrix": {
         "driver": "ws2812",
         "split_count": [36, 36],
-        "max_brightness": 176,
+        "max_brightness": 156,
         "animations": {
             "alphas_mods": true,
             "gradient_up_down": true,
