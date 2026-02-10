@@ -339,6 +339,8 @@ void matrix_init_kb(void) {
 
 HSV _get_hsv_for_layer_index(uint8_t layer) {
     switch (layer) {
+        case 0:
+            return (HSV){HSV_WHITE};
         case 1:
             return (HSV){HSV_BLUE};
         case 2:
