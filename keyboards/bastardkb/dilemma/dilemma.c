@@ -337,7 +337,7 @@ void matrix_init_kb(void) {
 }
 #endif // POINTING_DEVICE_ENABLE
 
-static HSV _get_hsv_for_layer_index(uint8_t layer) {
+HSV _get_hsv_for_layer_index(uint8_t layer) {
     switch (layer) {
         case 1:
             return (HSV){HSV_BLUE};
