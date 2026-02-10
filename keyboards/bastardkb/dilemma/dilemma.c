@@ -337,7 +337,6 @@ void matrix_init_kb(void) {
 }
 #endif // POINTING_DEVICE_ENABLE
 
-#ifdef RGB_MATRIX_ENABLE
 static HSV _get_hsv_for_layer_index(uint8_t layer) {
     switch (layer) {
         case 1:
@@ -391,7 +390,6 @@ bool rgb_matrix_indicators_advanced_kb(uint8_t led_min, uint8_t led_max) {
 
     return true;
 };
-#endif // RGB_MATRIX_ENABLE
 
 #ifdef ENCODER_ENABLE
 bool encoder_update_kb(uint8_t index, bool clockwise) {
