@@ -109,6 +109,4 @@ bool dilemma_get_pointer_dragscroll_enabled(void);
 void dilemma_set_pointer_dragscroll_enabled(bool enable);
 #endif // POINTING_DEVICE_ENABLE
 
-#ifdef RGB_MATRIX_ENABLE
 static HSV _get_hsv_for_layer_index(uint8_t layer);
-#endif // RGB_MATRIX_ENABLE 
